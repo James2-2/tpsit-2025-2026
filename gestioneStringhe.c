@@ -70,7 +70,6 @@ int main()
         printf("Non sono presenti doppie\n");
     }
 
-
     printf("Inserisci una stringa\n");
     scanf("%s", stringa2);
     
