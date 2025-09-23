@@ -5,11 +5,9 @@
 
 int main()
 {
-    char stringa [DIM], stringaPari[DIM], stringaDispari [DIM], stringa2[DIM];
-    int trovato = 0;
-    char lettera;
-    int conteggio = 0, soloLettere = 0, contPari = 0, contDispari = 0, contDoppie = 0, contVocali = 0, contVocali2 = 0;
-    int contConsonanti = 0, contConsonanti2 = 0, doppie = 0;
+    char stringa [DIM], stringaPari[DIM], stringaDispari [DIM], stringa2[DIM], lettera;
+    int trovato = 0, conteggio = 0, soloLettere = 0, contPari = 0, contDispari = 0, contDoppie = 0, contVocali = 0, contVocali2 = 0, contConsonanti = 0, contConsonanti2 = 0, doppie = 0;
+    
     printf("Inserisci una stringa\n");
     scanf("%s", stringa);
     // 1) Che contenga solo lettere;
@@ -70,7 +68,7 @@ int main()
         printf("Non sono presenti doppie\n");
     }
 
-    printf("Inserisci una stringa\n");
+    printf("Inserisci una seconda stringa\n");
     scanf("%s", stringa2);
     
     //1) Quale delle 2 è più lunga e più corta;
