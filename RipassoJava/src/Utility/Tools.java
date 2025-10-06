@@ -2,6 +2,13 @@ package Utility;
 
 import java.util.Scanner;
 
+/**
+ * Classe di utilità che fornisce metodi statici per operazioni comuni.
+ * Include funzionalità per la gestione del menu, pulizia dello schermo e attese.
+ *
+ * @author Giacomo Redi
+ * @version 1.0
+ */
 public class Tools {
     /*public static void main(String[] args) {
 
@@ -19,6 +26,11 @@ public class Tools {
         }
     }
 
+    /**
+     * Metodo che mette in pausa l'esecuzione per un determinato numero di millisecondi.
+     *
+     * @param attesa il numero di millisecondi di attesa
+     */
     public static void Wait(int attesa) {
         try {
             Thread.sleep(attesa);
@@ -27,6 +39,13 @@ public class Tools {
         }
     }
 
+    /**
+     * Visualizza un menu interattivo e restituisce la scelta dell'utente.
+     *
+     * @param opzioni array di stringhe contenente le opzioni del menu
+     * @param tastiera l'oggetto Scanner per l'input dell'utente
+     * @return la scelta dell'utente
+     */
     public static int Menu(String[] opzioni, Scanner tastiera) {// parametri formali
         int scelta;
 
