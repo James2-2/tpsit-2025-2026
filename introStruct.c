@@ -39,7 +39,6 @@ int main(){
     aggiornaEta(&persona1, 42);
     printf("Età ora: %d", persona1.eta);
     
-
     for(int i = 0; i< 10; i++){
         printf("Inserimento dati");
         printf("Nome: ");
