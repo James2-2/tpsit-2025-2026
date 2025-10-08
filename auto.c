@@ -87,54 +87,54 @@ int main(){
         int scelta;
         scanf("%d",&scelta);
 
-        switch(scelta){
-            case 1:
-                printf("Quante auto vuoi inserire?");
-                scanf("%d",&nAuto);
-                inserimentoAuto(collezioneAuto, nAuto);
-            break;
+    switch(scelta){
+        case 1:
+            printf("Quante auto vuoi inserire?");
+            scanf("%d",&nAuto);
+            inserimentoAuto(collezioneAuto, nAuto);
+        break;
 
-            case 2:
-                visualizza(collezioneAuto, nAuto);
-            break;
+        case 2:
+            visualizza(collezioneAuto, nAuto);
+        break;
 
-            case 3:
-                int max = prezzoPiuAlto(collezioneAuto, nAuto);
-                int min = prezzoPiuBasso(collezioneAuto, nAuto);
-                printf("Auto con prezzo più alto: %s",collezioneAuto[max].modelloAuto);
-                printf("Auto con prezzo più basso: %s",collezioneAuto[min].modelloAuto);
-            break;
+        case 3:
+            int max = prezzoPiuAlto(collezioneAuto, nAuto);
+            int min = prezzoPiuBasso(collezioneAuto, nAuto);
+            printf("Auto con prezzo più alto: %s",collezioneAuto[max].modelloAuto);
+            printf("Auto con prezzo più basso: %s",collezioneAuto[min].modelloAuto);
+        break;
 
-            case 4:
+        case 4:
 
-            break;
+        break;
 
-            case 5:
-                double prezzo;
-                printf("Inserisci un prezzo da cui visualizzare le auto");
-                scanf("%lf",&prezzo);
-                visualizzaAPartireDaUnPrezzo(collezioneAuto, nAuto, prezzo);
-            break;
+        case 5:
+            double prezzo;
+            printf("Inserisci un prezzo da cui visualizzare le auto");
+            scanf("%lf",&prezzo);
+            visualizzaAPartireDaUnPrezzo(collezioneAuto, nAuto, prezzo);
+        break;
 
-            case 6:
+        case 6:
+                
+        break;
 
-            break;
+        case 7:
 
-            case 7:
+        break;
 
-            break;
+        case 8:
 
-            case 8:
+        break;
 
-            break;
-
-            case 9:
+        case 9:
             printf("Uscita ...");
             esci = 0;
-            break;
+        break;
     }
 
     }while(esci == 1);
     
-    return 0;   
+    return 0;
 }
