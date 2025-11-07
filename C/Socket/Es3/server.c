@@ -53,7 +53,6 @@ int main()
     
     bind(socketfd, (struct sockaddr*)&servizio, sizeof(servizio)) 
         
-
     listen(socketfd, 10);
 
     for (;;) {
@@ -76,4 +75,5 @@ int main()
 
     close(socketfd);
     return 0;
+
 }
