@@ -49,17 +49,8 @@ int main()
     char risposta[DIM];
 
     socketfd = socket(AF_INET, SOCK_STREAM, 0);
-    if (socketfd < 0) {
-        perror("Errore creazione socket");
-        exit(1);
-    }
 
-    if (bind(socketfd, (struct sockaddr*)&servizio, sizeof(servizio)) < 0) {
-        perror("Errore nel bind");
-        close(socketfd);
-        exit(1);
-    }
-
+    bind(socketfd, (struct sockaddr*)&servizio, sizeof(servizio));
     listen(socketfd, 10);
 
     for (;;) {
@@ -82,4 +73,5 @@ int main()
 
     close(socketfd);
     return 0;
+
 }
