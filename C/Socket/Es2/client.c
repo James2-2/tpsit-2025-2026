@@ -21,7 +21,7 @@ numero di occorrenze del carattere nella stringa.
 
 int main(int argc, char * argv){
 
-    struct sockaddr_in servzio;
+    struct sockaddr_in servizio;
 
     servizio.sin_family = AF_INET;
     servizio.sin_addr.s_addr = htonl(INADDR_ANY);
@@ -50,3 +50,4 @@ int main(int argc, char * argv){
 
     return 0;
 }
+
