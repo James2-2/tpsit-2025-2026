@@ -24,7 +24,7 @@ numero di occorrenze del carattere nella stringa.
 
 int contaOccorrenze (char s [], char c){
     int contaOccorrenze = 0;
-    for(int i = 0; i< sizeof(s); i++){
+    for(int i = 0; i< strlen(s); i++){
         if(s[i] == c){
             contaOccorrenze ++;
         }
@@ -40,18 +40,18 @@ int main (){
     int socketfd, soa, fromlen = sizeof(servizio);
     char s [DIM], c, response[DIM];
     
-    socketfd = socket(AF_INET, SOCKSTREAM, 0);
-    bind(socketfd, struct(sockaddr*)&servizio, sizeof(servizio));
+    socketfd = socket(AF_INET, SOCK_STREAM, 0);
+    bind(socketfd, (struct sockaddr*)&servizio, sizeof(servizio));
     listen(socketfd, 10);
     
     for(;;){
         printf("Server in ascolto...\n");
         fflush(stdout);
         
-        soa = accept(socketfd, struct(sockaddr*)&addr_remoto, &fromlen);
+        soa = accept(socketfd, (struct sockaddr*)&addr_remoto, &fromlen);
         read(soa,s, sizeof(s));
         printf("Stringa ricevuta: %s\n");
-        read(soa, c, 1);
+        read(soa, &c, 1);
         printf("Carattere ricevuto: %c\n");
         
         if(contaOccorrenze > 0){
