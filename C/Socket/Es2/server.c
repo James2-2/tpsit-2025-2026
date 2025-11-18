@@ -45,7 +45,7 @@ int main (){
     listen(socketfd, 10);
     
     for(;;){
-        printf("Server in ascolto...\n");
+        printf("\n Server in ascolto...\n");
         fflush(stdout);
         
         soa = accept(socketfd, (struct sockaddr*)&addr_remoto, &fromlen);
@@ -60,11 +60,12 @@ int main (){
             printf("Il carattere non è presente nella parola");
         }
         
-        printf("Invio risposta al client... %s", response);
+        printf("\n Invio risposta al client... %s", response);
         write(soa, response, sizeof(response));
         close(soa);
     }
     
     return 0;
 }
+
 
