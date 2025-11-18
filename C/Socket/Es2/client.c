@@ -44,11 +44,12 @@ int main(int argc, char * argv){
     
     read(socketfd, str, sizeof(str)); //Riceve dal server
     
-    printf("Risposta del server... %s", str);
+    printf("\n Risposta del server... %s", str);
 
     close(socketfd);
 
     return 0;
 }
+
 
 
