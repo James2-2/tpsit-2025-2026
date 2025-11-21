@@ -5,8 +5,8 @@
 #include <string.h>
 #include <errno.h>
 #include <stdio.h>
-#
-#
+#include <ctype.h>
+#include <unistd.h>
 
 #define SERVERPORT 1450
 
