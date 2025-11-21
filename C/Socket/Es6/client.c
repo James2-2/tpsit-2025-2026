@@ -4,6 +4,8 @@ vettore di numeri e dopo aver effettuato gli eventuali ed opportuni controlli (s
 Client il conteggio dei numeri pari e dei numeri dispari contenuti nel vettore.
 */
 
+//@author Giacomo Redi 5F
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/socket.h>
