@@ -1,3 +1,11 @@
+/*Esercizio 5
+Scrivere il codice in C, di un applicazione Socket CLIENT-SERVER in cui il server riceve in input 2
+stringhe e, dopo aver effettuato gli eventuali ed opportuni controlli (se necessari), rispedisce al Client il
+messaggio di quale delle due stringhe è + lunga o più corta o se sono uguali.
+*/
+
+//@author Giacomo Redi 5F
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/socket.h>
@@ -18,12 +26,12 @@ int main() {
     servizio.sin_port = htons(SERVERPORT);
 
     if ((socketfd = socket(AF_INET, SOCK_STREAM, 0)) == -1) {
-        perror("socket");
+        printf("chiamata alla system call socket fallita");
         exit(1);
     }
 
     if (connect(socketfd, (struct sockaddr*)&servizio, sizeof(servizio)) == -1) {
-        perror("connect");
+        printf("chiamata alla system call connect fallita");
         exit(1);
     }
 
