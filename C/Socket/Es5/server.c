@@ -67,7 +67,5 @@ int main() {
 
         close(soa);
     }
-
-    close(socketfd);
     return 0;
 }
