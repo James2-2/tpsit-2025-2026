@@ -82,6 +82,5 @@ int main()
         close(soa);
     }
     
-    
     return 0;   
 }
