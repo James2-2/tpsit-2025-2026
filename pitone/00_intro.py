@@ -68,3 +68,15 @@ testo2 = "Arianna"
 fraseMeta = testo[0:2] # dal primo indice all'ultimo non compreso
 print(fraseMeta)
 
+# le condizioni
+
+# if condizione:
+#   istruzioni allora
+# else: 
+#   istruzione else
+
+numero = 18
+if numero < 0:
+    print("Minore di 0")
+else:
+    print("Maggiore o uguale a 0")
